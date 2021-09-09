@@ -10,7 +10,7 @@ router.post(
   [body('title').not().isEmpty().withMessage('Titled required')],
   validateRequest,
   async (req: Request, res: Response) => {
-    const { title, price } = req.body;
+    const { title } = req.body;
 
     const joke = Joke.build({
       title,
