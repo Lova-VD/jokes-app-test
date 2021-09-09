@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jokes-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jokes
+  template:
+    metadata:
+      labels:
+        app: jokes
+    spec:
+      containers:
+        - name: jokes
+          image: villagedukaan/jokes
+          env:
+            - name: MONGO_URI
+              value: 'mongodb://jokes-mongo-srv:27017/jokes'
+            - name: JWT_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: jwt-secret
+                  key: JWT_KEY
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: jokes-srv
+spec:
+  selector:
+    app: jokes
+  ports:
+    - name: jokes
+      protocol: TCP
+      port: 3000
+      targetPort: 3000
