@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jokes-mongo-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jokes-mongo
+  template:
+    metadata:
+      labels:
+        app: jokes-mongo
+    spec:
+      containers:
+        - name: jokes-mongo
+          image: mongo
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: jokes-mongo-srv
+spec:
+  selector:
+    app: jokes-mongo
+  ports:
+    - name: db
+      protocol: TCP
+      port: 27017
+      targetPort: 27017
