@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-01-14T05:39:51.330Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36" etag="6PPJ_mH2ja79-xiuk4aF" version="16.2.6" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-01-14T05:47:36.699Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36" etag="BcPIlLZO6UEJi8AFnUpS" version="16.2.6" type="github" pages="3">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Auth">
     <mxGraphModel dx="1347" dy="913" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -6,6 +6,27 @@
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="XzSn_rRKWrM8uNgigZ0G-0" value="&lt;font style=&quot;font-size: 25px&quot;&gt;&lt;b&gt;Authunetication and Authorisation Service&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="297" y="20" width="575" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mEv59eE15kOgKwGxT0Wn-0" value="Auth Service" style="text;html=1;strokeColor=#d6b656;fillColor=#fff2cc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;fontSize=30;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="425" y="90" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mEv59eE15kOgKwGxT0Wn-4" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=-0.001;entryY=0.375;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=30;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="mEv59eE15kOgKwGxT0Wn-1" target="mEv59eE15kOgKwGxT0Wn-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mEv59eE15kOgKwGxT0Wn-1" value="Browser" style="whiteSpace=wrap;html=1;aspect=fixed;rounded=0;sketch=0;fontSize=30;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="40" y="320" width="136" height="136" as="geometry" />
+        </mxCell>
+        <mxCell id="mEv59eE15kOgKwGxT0Wn-5" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;fontSize=30;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="mEv59eE15kOgKwGxT0Wn-3" target="mEv59eE15kOgKwGxT0Wn-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mEv59eE15kOgKwGxT0Wn-3" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;fontSize=30;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="360" y="160" width="530" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="mEv59eE15kOgKwGxT0Wn-6" value="&lt;font style=&quot;font-size: 15px&quot;&gt;Response&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;fontSize=30;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="237" y="440" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mEv59eE15kOgKwGxT0Wn-7" value="&lt;font style=&quot;font-size: 15px&quot;&gt;Request&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;fontSize=30;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="230" y="320" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
